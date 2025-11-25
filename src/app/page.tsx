@@ -1,33 +1,39 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       <div className="max-w-3xl mx-auto px-4 py-16 md:py-24">
         {/* Header */}
         <header className="mb-16">
+          <div className="mb-6 w-32 h-32 relative overflow-hidden rounded-full">
+            <Image
+              src="/images/profile.png"
+              alt="Kevin Suh"
+              fill
+              className="object-cover object-top"
+              priority
+            />
+          </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-4 tracking-tight">
             Kevin Suh
           </h1>
           <p className="text-xl md:text-2xl text-gray-600">
-            Builder. Investigator. Craftsman.
+            Curious, optimistic, and irreverent.
           </p>
         </header>
 
         {/* About */}
         <section className="mb-16 space-y-6 text-lg leading-relaxed">
           <p className="text-gray-800">
-            I build products with intention. Every feature, every line of code,
-            every decision is deliberate—driven by deep research, clear
-            hypotheses, and relentless curiosity.
+            Columbia grad in finance and computer science. I've lived
+            bicoastal—spent many years in New York, but San Francisco is home.
+            When I'm not working, I'm running, golfing, cooking, or traveling.
           </p>
           <p className="text-gray-800">
-            I don't just ship features. I investigate problems, understand the
-            underlying systems, and craft solutions that matter. When I form an
-            opinion, it's built on evidence. When I build something, it's built
-            to last.
-          </p>
-          <p className="text-gray-800">
-            Currently exploring the intersection of AI infrastructure and
-            developer tooling. Previously building at Finley and Approach Labs.
+            I was the first engineer at Nova Credit (YC W21) and helped raise a
+            Series A at Finley. Currently exploring AI capabilities through
+            personal projects.
           </p>
         </section>
 
